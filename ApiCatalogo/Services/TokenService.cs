@@ -8,7 +8,7 @@ namespace ApiCatalogo.Services
 {
     public class TokenService : ITokenService
     {
-        public string GerarToken(string key, string issuer, string audience, User user)
+        public string GerarToken(string key, string issuer, string audience, UserModel user)
         {
             // Irão compor o Payload do Token.
             var claims = new[]
